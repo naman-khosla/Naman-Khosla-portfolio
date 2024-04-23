@@ -11,7 +11,7 @@ function App() {
       <nav>
         <Navbar />
         <Body />
-        {/* <Footer /> */}
+        <Footer />
       </nav>
     </div>
   );
