@@ -30,9 +30,9 @@ export default function Body() {
           ideas flow freely. My relentless drive to lead and innovate keeps me
           ahead of the curve, setting trends rather than following them.
         </div>
-        <a href="#contact" className="btn btn-primary">
-          Let's Talk
-        </a>
+        <div className="talk_body_button">
+          <a href="#contact">Let's Talk</a>
+        </div>
       </div>
     </div>
   );

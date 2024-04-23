@@ -9,7 +9,7 @@ function NavbarButton({ button_type }) {
 
   return (
     <div
-      className="nav_button"
+      className={`navbar_button_${button_type}`}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
     >
@@ -24,13 +24,15 @@ function NavbarButton({ button_type }) {
 
 export default function Navbar() {
   return (
-    <div className="navbar">
+    <div className="navbar_shell">
       <img className="main_logo" src="images/navbar_buttons/main_logo.png" />
-      <NavbarButton button_type="homepage" />
-      <NavbarButton button_type="about" />
-      <NavbarButton button_type="resume" />
-      <NavbarButton button_type="portfolio" />
-      <NavbarButton button_type="hobbies" />
+      <div className="navbar_buttons">
+        <NavbarButton button_type="homepage" />
+        <NavbarButton button_type="about" />
+        <NavbarButton button_type="resume" />
+        <NavbarButton button_type="portfolio" />
+        <NavbarButton button_type="hobbies" />
+      </div>
     </div>
   );
 }

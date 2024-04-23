@@ -11,11 +11,17 @@ $flame: #eb5e28ff; */
     src: url("../fonts/Nickainley.ttf");
 }
 
+@font-face {
+    font-family: Trochhi;
+    src: url("../fonts/Trocchi.ttf");
+}
+
 .body {
     margin-top: auto;
     margin-left: 0;
-    margin-bottom: 0;
+    margin-bottom: auto;
     background-color: #CCC5B9;
+    position: relative;
 
 }
 
@@ -24,7 +30,7 @@ $flame: #eb5e28ff; */
     height: 450px;
     border-radius: 10%;
     margin-top: 60px;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 
 .name_logo {
@@ -34,17 +40,25 @@ $flame: #eb5e28ff; */
 }
 
 .about_me {
-    margin-right: auto;
-    margin-left: auto;
+    margin-bottom: auto;
     text-align: center;
     margin-top: 40px;
     margin-right: 100px;
     color: #F54703;
-    text-shadow: 0px 0px 5px gray;
+    text-shadow: 1px 1px 2px gray;
     font-weight: 800;
-    font-size: xx-large;
-    font-family: Nickainley;
+    font-size: 1.7rem;
+    font-family: Trocchi;
     
+}
+
+.talk_body_button{
+    font-family: Nickainley;
+    font-size: 2rem;
+    margin-top: 30px;
+    margin-left: -120px;
+    margin-bottom: 0;
+    text-align: center;
 }
 
 .about__cards {
@@ -53,12 +67,13 @@ $flame: #eb5e28ff; */
     gap: 1.5rem;
     margin-top: 70px;
     padding: 10px;
+    margin-right: 30px;
 }
 
 .about__card {
     border: 1px solid black;
     border-radius: 1rem;
-    padding: 2rem;
+    padding: 1.7rem;
     text-align: center;
     transition:0.3s;
     background: #403D39;
@@ -86,7 +101,7 @@ $flame: #eb5e28ff; */
 
 .about__card h5 {
     font-family: Nickainley;
-    font-size: 1.7rem;
+    font-size: 2rem;
     color: #F54703;
     text-shadow: 0px 0px 3px black;
 

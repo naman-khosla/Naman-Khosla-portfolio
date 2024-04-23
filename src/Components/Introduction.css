@@ -1,0 +1,86 @@
+/* SCSS HEX
+$floral-white: #fffcf2ff;
+$timberwolf: #ccc5b9ff;
+$black-olive: #403d39ff;
+$eerie-black: #252422ff;
+$flame: #eb5e28ff; */
+
+.introduction_shell{
+    max-height: 500px;
+    background-color: white;
+    margin: 0px 20px 0px 0px;
+    padding: 40px;
+    display: flex;
+    background-color: #ccc5b9ff;
+}
+
+.introduction_left_box{
+    display: flex;
+    min-width: 40%;
+    justify-content: space-around;
+    padding: auto;
+    margin-top: -10px;
+}
+
+.profile_pic{
+    height: 400px;
+    border-radius: 10%;
+}
+
+.name_logo{
+    height: 320px;
+    margin-top: -14%;
+    margin-left: -18%;
+}
+
+.introduction_right_box{
+    max-width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+    column-gap: 5%;
+    margin-top: -10px;
+}
+.infographic_box_left {
+    width: 175px;
+    height: 150px;
+    border: 1px black solid;
+    padding: 7%;
+    color: #eb5e28ff;
+    background-color:#403d39ff;
+    border-radius: 10%;
+    text-shadow: 0px 0px 0.5px white;
+}
+
+.award_icon{
+    font-size: 2.5rem;
+}
+
+.introduction_right_box h5{
+    font-size: 1.4rem;
+}
+
+.introduction_right_box p {
+    font-size: 1.4rem;
+}
+
+.infographic_box_right {
+    width: 175px;
+    height: 150px;
+    border: 1px black solid;
+    padding: 7%;
+    color: #eb5e28ff;
+    background-color: #403d39ff;
+    border-radius: 10%;
+}
+
+.folder_icon {
+    font-size: 2.5rem;
+}
+
+.about_me1{
+    color: black;
+    font-size: 1.3rem;
+}
