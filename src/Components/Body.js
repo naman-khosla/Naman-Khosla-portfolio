@@ -1,4 +1,4 @@
-import "./Bodytest.css";
+import "./Body.css";
 import { FaAward } from "react-icons/fa";
 import React from "react";
 import { VscFolderLibrary } from "react-icons/vsc";
@@ -23,13 +23,13 @@ export default function Body() {
             <small>10+ Completed Projects</small>
           </article>
         </div>
-        <p className="test">
+        <div className="about_me">
           With a knack for innovative thinking, I excel in turning abstract
           ideas into practical business solutions. I thrive in team
           environments, using motivational techniques to foster a space where
           ideas flow freely. My relentless drive to lead and innovate keeps me
           ahead of the curve, setting trends rather than following them.
-        </p>
+        </div>
         <a href="#contact" className="btn btn-primary">
           Let's Talk
         </a>

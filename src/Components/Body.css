@@ -1,82 +1,119 @@
+/* SCSS HEX
+$floral-white: #fffcf2ff;
+$timberwolf: #ccc5b9ff;
+$black-olive: #403d39ff;
+$eerie-black: #252422ff;
+$flame: #eb5e28ff; */
+
+
+@font-face {
+    font-family: Nickainley;
+    src: url("../fonts/Nickainley.ttf");
+}
+
 .body {
-    margin-top: 30px;
-    margin-left: 50px;
+    margin-top: auto;
+    margin-left: 0;
+    margin-bottom: 0;
+    background-color: #CCC5B9;
+
 }
 
 .profile_picture {
     width: 420px;
     height: 450px;
     border-radius: 10%;
-    margin-top: 50px;
+    margin-top: 60px;
+    margin-left: 50px;
 }
 
 .name_logo {
     width: 325px;
-    margin-left: -120px;
-    margin-top: -90px;
+    margin-left: -125px;
+    margin-top: -12px;
 }
 
-.about__content {
-    display: grid;
-    grid-template: 8px 8px / 1fr 1fr;    
-    gap: 15%;
-}
-
-.about_me{
+.about_me {
     margin-right: auto;
     margin-left: auto;
     text-align: center;
-    margin-top: 200px;
+    margin-top: 40px;
     margin-right: 100px;
     color: #F54703;
     text-shadow: 0px 0px 5px gray;
     font-weight: 800;
+    font-size: xx-large;
+    font-family: Nickainley;
+    
 }
-about__cards {
+
+.about__cards {
     display: grid;
-    grid-template: 8px 8px / 1fr 1fr;
+    grid-template-columns: repeat(2, 1fr);
     gap: 1.5rem;
+    margin-top: 70px;
+    padding: 10px;
 }
 
 .about__card {
-    background: var(--color-bg-variant);
-    border: 1px solid transparent;
+    border: 1px solid black;
     border-radius: 1rem;
     padding: 2rem;
     text-align: center;
-    transition: var(--transition);
+    transition:0.3s;
+    background: #403D39;
 }
 
 .about__card:hover {
-    background: transparent;
-    border-color: var(--color-primary-variant);
+    background: #F54703;
+    border-color: black;
     cursor: default;
+
 }
 
 .about__icon {
-    color: var(--color-primary);
-    font-size: 1.5rem;
-    margin-bottom: 1rem;
+    color: #F54703;
+    font-size: 3rem;
+    margin-bottom: 0.2rem;
+}
+
+.about__card:hover .about__icon {
+    color: black;
+    font-size: 3rem;
+    margin-bottom: 0.2rem;
+
 }
 
 .about__card h5 {
-    font-size: 1rem;
+    font-family: Nickainley;
+    font-size: 1.7rem;
+    color: #F54703;
+    text-shadow: 0px 0px 3px black;
+
+}
+
+.about__card:hover h5{
+    color: black;
+    text-shadow: 0px 0px 3px whitesmoke;
 }
 
 .about__card small {
-    font-size: 0.9rem;
-    color: var(--color-light);
+    font-size: 1.3rem;
+    color: #F54703;
+    text-shadow: 0px 0px 3px black;
+}
+.about__card:hover small {
+    color: black;
+    text-shadow: 0px 0px 3px whitesmoke;
 }
 
 .about__content p {
     margin: 2rem 0 2.6rem;
-    color: var(--color-light);
+    color: black;
 }
-.test{
-    grid-column: 1 / -1;
-}
+
 @media screen and (max-width: 1024px) {
-    .about__container {
+    .about__content {
         grid-template-columns: 1fr;
         gap: 0;
     }

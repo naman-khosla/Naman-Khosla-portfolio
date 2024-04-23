@@ -4,8 +4,8 @@ import { useState } from "react";
 function NavbarButton({ button_type }) {
   const [isHovered, setIsHovered] = useState(false);
 
-  const defaultImage = `images/navbar_buttons/${button_type}_button.png`;
-  const hoverImage = `images/navbar_buttons/${button_type}_button_hover.png`;
+  const defaultImage = `images/navbar_buttons/${button_type}_button.svg`;
+  const hoverImage = `images/navbar_buttons/${button_type}_button_hover.svg`;
 
   return (
     <div
@@ -16,7 +16,7 @@ function NavbarButton({ button_type }) {
       <img
         src={isHovered ? hoverImage : defaultImage}
         alt="logo"
-        style={{ width: "auto", height: "150px" }}
+        style={{ width: "auto", height: "80px" }}
       />
     </div>
   );
