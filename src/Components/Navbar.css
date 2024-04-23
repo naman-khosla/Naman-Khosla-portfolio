@@ -1,0 +1,29 @@
+/* .navbar {
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    padding-inline: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #464545;
+    flex-wrap: wrap;
+} */
+
+.nav_buttons{
+    margin-top: 100px;
+}
+
+.navbar {
+    margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-inline: 5px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #464545;
+}
+.main_logo{
+    height: 120px;
+}
