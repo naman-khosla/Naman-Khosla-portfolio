@@ -1,0 +1,28 @@
+.body {
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.profile_picture {
+    width: 420px;
+    height: 450px;
+    border-radius: 10%;
+    margin-top: 50px;
+}
+
+.name_logo {
+    width: 325px;
+    margin-left: -120px;
+    margin-top: -90px;
+}
+
+.about_me{
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    margin-top: 200px;
+    margin-right: 100px;
+    color: #F54703;
+    text-shadow: 0px 0px 1px black;
+    font-weight: 800;
+}
