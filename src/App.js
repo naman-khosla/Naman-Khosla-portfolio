@@ -12,7 +12,7 @@ function App() {
       <nav>
         <Navbar />
         <Introduction />
-        <Body />
+        {/* <Body /> */}
         <Footer />
       </nav>
     </div>

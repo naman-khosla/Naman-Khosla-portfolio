@@ -1,6 +1,6 @@
 import "./Introduction.css";
-import { FaAward } from "react-icons/fa";
-import { VscFolderLibrary } from "react-icons/vsc";
+import { MdOutlineAutoGraph } from "react-icons/md";
+import { FaFolderTree } from "react-icons/fa6";
 
 export default function Introduction() {
   return (
@@ -19,12 +19,12 @@ export default function Introduction() {
       </div>
       <div className="introduction_right_box">
         <div className="infographic_box_left">
-          <FaAward className="award_icon" />
+          <MdOutlineAutoGraph className="award_icon" />
           <h5>Experience</h5>
           <p>1.5 years</p>
         </div>
         <div className="infographic_box_right">
-          <VscFolderLibrary className="folder_icon" />
+          <FaFolderTree className="folder_icon" />
           <h5>Projects</h5>
           <p>10+ Completed Projects</p>
         </div>

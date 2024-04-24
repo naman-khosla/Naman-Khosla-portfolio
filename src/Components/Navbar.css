@@ -1,5 +1,5 @@
 .navbar_shell{
-    background-color: white;
+    background-color: #FFFCF2;
     min-height: auto;
     box-shadow: 0px 0px 10px black;
     position: relative;
@@ -28,4 +28,8 @@
 .navbar_buttons nav_button_homepage {
     height: 200px;
     width: 200px;
+}
+
+.navbar_button_homepage > svg{
+    filter: contrast(50%);
 }

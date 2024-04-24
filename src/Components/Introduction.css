@@ -1,17 +1,15 @@
-/* SCSS HEX
-$floral-white: #fffcf2ff;
-$timberwolf: #ccc5b9ff;
-$black-olive: #403d39ff;
-$eerie-black: #252422ff;
-$flame: #eb5e28ff; */
+@font-face {
+    font-family: Trochhi;
+    src: url("../fonts/Trocchi.ttf");
+}
 
 .introduction_shell{
-    max-height: 500px;
+    min-height: 500px;
     background-color: white;
-    margin: 0px 20px 0px 0px;
+    margin: 70px 0px 0px 0px;
     padding: 40px;
     display: flex;
-    background-color: #ccc5b9ff;
+    background-color: #FFFCF2;
 }
 
 .introduction_left_box{
@@ -41,46 +39,63 @@ $flame: #eb5e28ff; */
     text-align: center;
     flex-wrap: wrap;
     column-gap: 5%;
-    margin-top: -10px;
+    margin-top: -20px;
 }
 .infographic_box_left {
-    width: 175px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     border: 1px black solid;
-    padding: 7%;
-    color: #eb5e28ff;
-    background-color:#403d39ff;
+    padding: 1.7rem;
+    color: #F54703;
+    background:#403d39ff;
     border-radius: 10%;
-    text-shadow: 0px 0px 0.5px white;
+    text-shadow: 0px 0px 10px black;
 }
 
 .award_icon{
-    font-size: 2.5rem;
+    font-size: 4rem;
 }
 
 .introduction_right_box h5{
-    font-size: 1.4rem;
+    font-size: 1.7rem;
 }
 
 .introduction_right_box p {
-    font-size: 1.4rem;
+    font-size: 1.3rem;
 }
 
 .infographic_box_right {
-    width: 175px;
-    height: 150px;
+    width: 250px;
+    height: 250px;
     border: 1px black solid;
-    padding: 7%;
-    color: #eb5e28ff;
-    background-color: #403d39ff;
+    padding: 1.7rem;
+    color: #F54703;
+    background: #403d39ff;
     border-radius: 10%;
+    text-shadow: 0px 0px 10px black;
 }
 
 .folder_icon {
-    font-size: 2.5rem;
+    font-size: 4rem;
+}
+
+.infographic_box_left:hover {
+    background: #F54703;
+    color: #403d39ff;
+    text-shadow: 0px 0px 2px white;
+}
+
+.infographic_box_right:hover {
+    background: #F54703;
+    color: #403d39ff;
+    text-shadow: 0px 0px 2px white;
 }
 
 .about_me1{
     color: black;
-    font-size: 1.3rem;
+    font-family: Trochhi;
+    font-size: 1.4rem;
+    text-shadow: 1px 1px 1px #F54703;
+    margin-left: -80px;
 }
+
