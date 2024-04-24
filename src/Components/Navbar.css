@@ -29,7 +29,3 @@
     height: 200px;
     width: 200px;
 }
-
-.navbar_button_homepage > svg{
-    filter: contrast(50%);
-}
