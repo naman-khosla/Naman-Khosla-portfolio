@@ -13,6 +13,7 @@ function App() {
       <nav>
         <Navbar />
         <Introduction1 />
+
         {/* <Body /> */}
         <Footer />
       </nav>
