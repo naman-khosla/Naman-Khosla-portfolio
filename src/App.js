@@ -5,13 +5,14 @@ import Navbar from "./Components/Navbar.js";
 import Footer from "./Components/Footer.js";
 import Body from "./Components/Body.js";
 import Introduction from "./Components/Introduction.js";
+import Introduction1 from "./Components/Introduction_1.js";
 
 function App() {
   return (
     <div className="main">
       <nav>
         <Navbar />
-        <Introduction />
+        <Introduction1 />
         {/* <Body /> */}
         <Footer />
       </nav>

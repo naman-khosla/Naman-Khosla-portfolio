@@ -73,6 +73,7 @@
     background: #403d39ff;
     border-radius: 10%;
     text-shadow: 0px 0px 10px black;
+    justify-content: space-around;
 }
 
 .folder_icon {

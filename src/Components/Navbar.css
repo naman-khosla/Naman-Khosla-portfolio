@@ -10,7 +10,11 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
+    z-index: 9999;
+    transition: 0.32s ease-in-out;
 }
+
+
 
 .main_logo{
     height: 150px;

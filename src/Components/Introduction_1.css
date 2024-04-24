@@ -1,0 +1,57 @@
+@font-face {
+    font-family: Grotesk;
+    src: url("../fonts/Grotesk.ttf");
+}
+.intro_shell{
+    display: flex;
+    justify-content:space-around;
+    margin: 2rem 0 0 0;
+    background-image: url('background.svg');
+    background-size:contain;
+    min-height: 620px;
+    font-family: Grotesk;
+}
+
+.intro_body{
+    text-align: center;
+    margin-top: 2%;
+    max-width: 30%;
+    font-weight: 600;
+}
+
+.naman{
+    font-size: 6rem;
+    padding: 0%;
+}
+
+.intro_text{
+    font-size: 1.1rem;
+    color: white;
+    margin-top: 30%;
+    font-family: Grotesk;
+}
+
+.profile_pic_1{
+    position: relative;
+    height: 620px;
+    margin-top: -70px;}
+
+.body_icon1, .body_icon2, .body_icon3{
+    position: absolute;
+    width: 20%;
+}
+
+.body_icon1{
+    top:540px;
+    left: 200px;
+}
+
+.body_icon2{
+    top: 400px;
+    left: 670px;
+}
+
+.body_icon3{
+    right:30px;
+    top: 300px;
+}
