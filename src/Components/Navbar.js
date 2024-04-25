@@ -58,7 +58,11 @@ export default function Navbar() {
   } else {
     return (
       <div className="navbar_shell">
-        <img className="main_logo" src="images/navbar_buttons/main_logo.png" />
+        <img
+          className="main_logo"
+          src="images/navbar_buttons/main_logo.png"
+          alt="main logo"
+        />
         <div className="navbar_buttons">
           <NavbarButton button_type="homepage" />
           <NavbarButton button_type="about" />
