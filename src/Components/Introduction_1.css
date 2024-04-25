@@ -77,4 +77,14 @@
     }
 }
 
+@media (max-width: 1370px) {
+    .body_icon1, .body_icon2, .body_icon3 {
+            display: none;
+        }
     
+    .naman {
+        font-size: 4rem;
+        padding: 0%;
+    }
+    
+}    

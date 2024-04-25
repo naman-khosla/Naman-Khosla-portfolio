@@ -1,0 +1,17 @@
+.resume_shell{
+    display: flex;
+    flex-direction: row;
+    border: 1px solid black;
+}
+
+.resume_left_container{
+    flex-basis: 55%;
+    border: 1px solid black;
+}
+.resume_heading_image{
+    max-width: fit-content;
+}
+.text_resume_image{}
+.resume_text{}
+.resume_right_container{}
+.profile_text{}

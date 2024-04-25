@@ -11,6 +11,8 @@ import About from "./Pages/About";
 import Resume from "./Pages/Resume";
 import Portfolio from "./Pages/Portfolio";
 import Hobbies from "./Pages/Hobbies";
+import PortfolioPage from "./Pages/Pull.js";
+import ProjectDetail from "./Pages/ProjectDetails.js";
 
 function App() {
   return (
@@ -21,8 +23,9 @@ function App() {
         <Route path="/homepage" element={<Navigate replace to="/" />} />
         <Route path="/about" element={<About />} />
         <Route path="/resume" element={<Resume />} />
-        <Route path="/portfolio" element={<Portfolio />} />
+        <Route path="/portfolio" element={<PortfolioPage />} />
         <Route path="/hobbies" element={<Hobbies />} />
+        <Route path="/:projectName" element={<ProjectDetail />} />
       </Routes>
       <Footer />
     </BrowserRouter>
