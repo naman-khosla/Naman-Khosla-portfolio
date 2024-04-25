@@ -1,0 +1,55 @@
+.about-container {
+    text-align: center;
+    background: #FFFFFF;
+    /* or any color that matches your design */
+    padding: 20px;
+}
+
+.about-header {
+    position: relative;
+    margin-bottom: 20px;
+    /* adjust as needed */
+}
+
+.about-header-image {
+    max-width: 30%;
+    /* or max-width if you want it smaller */
+    height: auto;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    /* Adjust the space between text and image */
+}
+
+.about-text {
+    flex: 1;
+    /* Adjusts the text block size */
+    max-width: 600px;
+    /* Maximum width of the text */
+    color: #000000;
+    /* Text color */
+    padding: 20px;
+    font-family: 'Your font', sans-serif;
+    /* Choose your font */
+}
+
+.profile-picture {
+    width: 300px;
+    /* Adjust as needed */
+    height: auto;
+    border-radius: 50%;
+    /* Makes the image round */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    /* Optional shadow for style */
+}
+
+/* Add media queries for responsiveness */
+@media (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+}

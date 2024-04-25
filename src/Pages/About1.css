@@ -1,0 +1,72 @@
+@font-face {
+    font-family: Grotesk;
+    src: url("../fonts/Grotesk.ttf");
+}
+
+.about_shell {
+    margin: 0em 1em;
+    display: flex;
+    justify-content: space-between;
+    /* This may be causing elements to spread too far apart on medium screens */
+    gap: 1em;
+    background-image: url('7.svg');
+}
+
+.about_container_left{
+    /* or blue for the right container */
+    display: flex;
+    flex-basis: 50%;
+    /* Start with half the width for each container */
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.about_container_right {
+    /* or blue for the right container */
+    display: flex;
+    flex-basis: 50%;
+    /* Start with half the width for each container */
+    padding: 1em;
+    align-items: center;
+    justify-content: center;
+}
+
+.about_text {
+    font-family: Grotesk;
+    font-size: 1.5rem;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.about_container_right {
+    background-image: url('about_me_pic.svg');
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+
+    /* Ensure your image is not too large to fit in its container */
+}
+
+.about-header-image{
+        max-width: 85%;
+        height: auto;
+        
+    }
+
+@media (max-width: 768px) {
+    .about_shell {
+        flex-direction: column;
+    }
+
+    .about_container_left,
+    .about_container_right {
+        flex-basis: auto;
+    }
+
+    .about_header_image,
+    .about_picture {
+        max-width: 100%;
+    }
+}
