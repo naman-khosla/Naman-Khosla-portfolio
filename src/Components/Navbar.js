@@ -45,6 +45,7 @@ export default function Navbar() {
         <img
           className="main_logo_test"
           src="images/navbar_buttons/main_logo.png"
+          alt="mainlogo"
         />
         <div className="navbar_buttons_test">
           <NavbarButton button_type="homepage" />
