@@ -1,0 +1,30 @@
+.navbar_shell {
+    position: sticky;
+    background-color: green;
+    min-height: auto;
+    box-shadow: 0px 0px 10px black;
+    padding: 20px;
+    top: 0;
+    margin: 0 0 15px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    z-index: 9999;
+    transition: all 0.3s ease-in-out;
+}
+
+
+.main_logo {
+    height: 150px;
+    width: 150px;
+}
+
+.navbar_buttons {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: auto;
+    justify-content: space-around;
+
+}
+

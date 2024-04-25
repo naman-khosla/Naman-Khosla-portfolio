@@ -6,6 +6,8 @@ import Footer from "./Components/Footer.js";
 import Body from "./Components/Body.js";
 import Introduction from "./Components/Introduction.js";
 import Introduction1 from "./Components/Introduction_1.js";
+import ProfessionalSnap from "./Components/ProfessionalSnap.js";
+
 
 function App() {
   return (
@@ -13,8 +15,7 @@ function App() {
       <nav>
         <Navbar />
         <Introduction1 />
-
-        {/* <Body /> */}
+        <ProfessionalSnap />
         <Footer />
       </nav>
     </div>

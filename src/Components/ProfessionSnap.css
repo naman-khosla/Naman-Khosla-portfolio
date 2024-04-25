@@ -1,0 +1,67 @@
+@font-face {
+    font-family: Grotesk;
+    src: url("../fonts/Grotesk.ttf");
+}
+
+.professional_snap_shell{
+    display: block;
+    min-height: 600px;
+    margin: 0 0 0 0;
+    padding: 2.5em;
+    background-color: #ff5500;
+    font-family: Grotesk;
+
+}
+
+.professional_snap_shell h{
+    font-size: 400%;
+}
+.professional_card_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+    margin: 5% 5% 5% 5%;
+}
+
+.card {
+    border: 2px dotted whitesmoke;
+    border-radius: 8px;
+    padding: 30px;
+    margin-top: auto;
+    margin-bottom: auto;
+    text-align: center;
+    background-color: #0D221B;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    background-color: transparent ;
+    color: black;
+}
+
+.icons{
+    width: 60px;
+    height: auto;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.card-title {
+    margin: 10px 0;
+    color: white;
+    font-size: 24px;
+}
+
+.card-description {
+    color: white;
+    font-size: 19px;
+}
+
+.card:hover .card-title,
+.card:hover .card-description,
+.card:hover .icons {
+    color: black;
+}

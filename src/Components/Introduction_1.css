@@ -2,38 +2,52 @@
     font-family: Grotesk;
     src: url("../fonts/Grotesk.ttf");
 }
-.intro_shell{
+/* .intro_shell{
     display: flex;
     justify-content:space-around;
-    margin: 2rem 0 0 0;
+    margin: 2.5em 0 0 0;
+    padding: 2em;
     background-image: url('background.svg');
-    background-size:contain;
-    min-height: 620px;
+    background-size:cover;
+    background-position: center;
+    max-height: 800px;
     font-family: Grotesk;
+    flex-wrap:wrap;
+} */
+
+.intro_shell{
+        background-image: url('background.svg');
+        background-size: cover;
+        background-position: center;
+}
+
+.intro_container{
+    margin-right: 2em;
+    margin-left: 2em;
+    padding: 5rem;
+    display: flex;
+    gap: 2rem;
 }
 
 .intro_body{
-    text-align: center;
-    margin-top: 2%;
-    max-width: 30%;
+    padding: auto;
+    text-align: left;
     font-weight: 600;
 }
 
 .naman{
-    font-size: 6rem;
-    padding: 0%;
+    font-size: 6.5em;
 }
 
 .intro_text{
-    font-size: 1.1rem;
+    margin-top: 10rem;
+    font-size: 1.4rem;
     color: white;
-    margin-top: 30%;
     font-family: Grotesk;
 }
 
 .profile_pic_1{
-    position: relative;
-    height: 620px;
+    max-width: 40%;
     margin-top: -70px;
     left: 50px;
 }
@@ -45,12 +59,12 @@
 
 .body_icon1{
     top:470px;
-    left: 120px;
+    left: 100px;
     animation: 3s linear 0s infinite alternate sun-rise;
 }
 
 .body_icon2{
-    top: 300px;
+    top: 400px;
     left: 600px;
 }
 
@@ -73,3 +87,15 @@
         transform: translateX(0);
     }
 }
+
+@media (max-width: 1370px) {
+    .body_icon1, .body_icon2, .body_icon3 {
+            display: none;
+        }
+    
+    .naman {
+        font-size: 4rem;
+        padding: 0%;
+    }
+    
+}    

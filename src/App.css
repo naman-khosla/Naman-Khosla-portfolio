@@ -1,17 +1,16 @@
-<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">* {
-  box-sizing: border-box;
-}
-/* 
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-} */
+} *
 
 html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
 }
+
 
 
 @media (min-width:1700px) {
