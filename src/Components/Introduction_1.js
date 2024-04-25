@@ -1,4 +1,5 @@
 import "./Introduction_1.css";
+import { Link } from "react-router-dom";
 
 export default function Introduction_1() {
   return (
@@ -6,7 +7,7 @@ export default function Introduction_1() {
       <div className="intro_container">
         <div className="intro_body">
           <h className="naman">I'm Naman Khosla !</h>
-          <a href="about_me">
+          <a href="/about_me">
             <img
               className="body_icon1"
               src="images/Assets/3.svg"
@@ -28,7 +29,7 @@ export default function Introduction_1() {
         />
       </div>
       <img className="body_icon2" src="images/Assets/4.svg" alt="icon 1" />
-      <a href="#resume">
+      <a href="/resume">
         <img
           className="body_icon3"
           src="images/Assets/5.svg"

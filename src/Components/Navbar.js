@@ -1,6 +1,5 @@
 import "./Navbar.css";
 import { useState, useEffect } from "react";
-
 function NavbarButton({ button_type }) {
   const [isHovered, setIsHovered] = useState(false);
 
