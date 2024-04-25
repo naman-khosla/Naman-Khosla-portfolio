@@ -1,23 +1,23 @@
 import "./Navbar.css";
 import { useState, useEffect } from "react";
+import { Link } from "react-router-dom";
+
 function NavbarButton({ button_type }) {
   const [isHovered, setIsHovered] = useState(false);
-
   const defaultImage = `images/navbar_buttons/${button_type}_button.svg`;
   const hoverImage = `images/navbar_buttons/${button_type}_button_hover.svg`;
+  const linkPath = button_type === "homepage" ? "/" : `/${button_type}`;
 
   return (
-    <div
-      className={`navbar_button_${button_type}`}
-      onMouseEnter={() => setIsHovered(true)}
-      onMouseLeave={() => setIsHovered(false)}
-    >
+    <Link to={linkPath} className={`navbar_button_${button_type}`}>
       <img
         src={isHovered ? hoverImage : defaultImage}
-        alt="logo"
+        alt={button_type}
+        onMouseEnter={() => setIsHovered(true)}
+        onMouseLeave={() => setIsHovered(false)}
         style={{ width: "auto", maxHeight: "80px" }}
       />
-    </div>
+    </Link>
   );
 }
 
@@ -26,51 +26,32 @@ export default function Navbar() {
 
   useEffect(() => {
     const onScroll = () => {
-      if (window.scrollY >= 20) {
-        setScrolled(true);
-      } else {
-        setScrolled(false);
-      }
+      setScrolled(window.scrollY >= 20);
     };
 
     window.addEventListener("scroll", onScroll);
-
     return () => window.removeEventListener("scroll", onScroll);
   }, []);
 
-  if (scrolled) {
-    return (
-      <div className="navbar_test">
+  const navbarClass = scrolled ? "navbar_test" : "navbar_shell";
+  const logoClass = scrolled ? "main_logo_test" : "main_logo";
+
+  return (
+    <div className={navbarClass}>
+      <Link to="/">
         <img
-          className="main_logo_test"
-          src="images/navbar_buttons/main_logo.png"
-          alt="mainlogo"
-        />
-        <div className="navbar_buttons_test">
-          <NavbarButton button_type="homepage" />
-          <NavbarButton button_type="about" />
-          <NavbarButton button_type="resume" />
-          <NavbarButton button_type="portfolio" />
-          <NavbarButton button_type="hobbies" />
-        </div>
-      </div>
-    );
-  } else {
-    return (
-      <div className="navbar_shell">
-        <img
-          className="main_logo"
+          className={logoClass}
           src="images/navbar_buttons/main_logo.png"
           alt="main logo"
         />
-        <div className="navbar_buttons">
-          <NavbarButton button_type="homepage" />
-          <NavbarButton button_type="about" />
-          <NavbarButton button_type="resume" />
-          <NavbarButton button_type="portfolio" />
-          <NavbarButton button_type="hobbies" />
-        </div>
+      </Link>
+      <div className="navbar_buttons">
+        <NavbarButton button_type="homepage" />
+        <NavbarButton button_type="about" />
+        <NavbarButton button_type="resume" />
+        <NavbarButton button_type="portfolio" />
+        <NavbarButton button_type="hobbies" />
       </div>
-    );
-  }
+    </div>
+  );
 }

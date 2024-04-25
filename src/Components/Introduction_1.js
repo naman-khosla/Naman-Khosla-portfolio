@@ -7,13 +7,13 @@ export default function Introduction_1() {
       <div className="intro_container">
         <div className="intro_body">
           <h className="naman">I'm Naman Khosla !</h>
-          <a href="/about_me">
+          <Link to="/about_me">
             <img
               className="body_icon1"
               src="images/Assets/3.svg"
               alt="icon about"
             />
-          </a>
+          </Link>
           <p className="intro_text">
             With a knack for innovative thinking, I excel in turning abstract
             ideas into practical business solutions. I thrive in team

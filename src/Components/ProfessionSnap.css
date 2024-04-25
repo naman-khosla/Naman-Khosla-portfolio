@@ -14,7 +14,8 @@
 }
 
 .professional_snap_shell h{
-    font-size: 400%;
+    font-size: 4em;
+    text-shadow: 0px 0px 8px white;
 }
 .professional_card_container {
     display: flex;
@@ -64,4 +65,5 @@
 .card:hover .card-description,
 .card:hover .icons {
     color: black;
+        text-shadow: 0px 0px 8px white;
 }
