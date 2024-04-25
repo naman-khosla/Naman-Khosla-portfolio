@@ -7,7 +7,7 @@ export default function Introduction_1() {
       <div className="intro_container">
         <div className="intro_body">
           <h className="naman">I'm Naman Khosla !</h>
-          <Link to="/about_me">
+          <Link to="/about">
             <img
               className="body_icon1"
               src="images/Assets/3.svg"

@@ -1,0 +1,172 @@
+@font-face {
+    font-family: Grotesk;
+    src: url("../fonts/Grotesk.ttf");
+}
+
+.about_section_2_shell{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 1em;
+    font-family: Grotesk;
+    flex-wrap: wrap;
+    background-image: url('7.svg');
+    background-repeat: space;
+}
+
+.about_section_2_heading_container{
+    display: flex;
+    font-size: 3.5em;
+    font-weight: 700;
+    background-image: url('9.svg');
+    background-size: 40%;
+    background-position: 40% 50%;
+    background-repeat: no-repeat;
+}
+
+.section_2_heading_container_text{
+    display: flex;
+}
+
+.about_section_2_education_container{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: stretch;
+    gap: 2em;
+    flex-wrap: wrap;
+}
+
+.education_card_1, .education_card_2, .education_card_3 {
+    flex-basis: 30%;
+    padding: 2em;
+    margin: auto;
+    border: 1px solid black ;
+    border-radius: 5%;
+    flex-wrap: wrap;
+    background-color: rgba(255, 85, 0, 0.2)
+}
+
+.education_card_1 h1,
+.education_card_2 h1,
+.education_card_3 h1 {
+    font-size: 1.7em;
+}
+
+.education_card_1 .logo,
+.education_card_2 .logo,
+.education_card_3 .logo {
+    max-width: 35%;
+    margin-bottom: 1em; 
+
+}
+
+.education_card_3 .logo {
+    max-width: 35%;
+    margin-bottom: 2em;
+
+}
+
+.education_card_1 p,
+.education_card_2 p,
+.education_card_3 p {
+    font-size: 1.3em;
+}
+.education_card_3 p {
+    font-size: 1.3em;
+    margin-bottom: 0.9em;
+}
+
+.about_section_2_description_container{
+    display: flex;
+    justify-content: space-between;
+    gap: 10em;
+    margin-left: 1em;
+}
+
+.image_container{
+    flex-basis: 30%;
+    display: flex;
+}
+
+
+.edu_icon{
+    max-width: 200%;
+}
+
+.text_container{
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+    font-size: 1.3rem;
+}
+
+/* ... existing styles ... */
+
+/* Responsive styles for the education cards */
+@media (max-width: 1024px) {
+
+    /* For tablets and smaller desktops */
+    .education_card_1,
+    .education_card_2,
+    .education_card_3 {
+        flex-basis: 45%;
+        /* Slightly larger cards for medium screens */
+    }
+
+    .about_section_2_education_container {
+        justify-content: center;
+        /* Center the cards on medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* For mobile devices */
+    .education_card_1,
+    .education_card_2,
+    .education_card_3 {
+        flex-basis: 100%;
+        /* Full width cards on small screens */
+        margin: 1em 0;
+        /* Add some top and bottom margin for spacing */
+        padding: 1em;
+        /* Adjust padding as needed */
+    }
+
+    .about_section_2_education_container {
+        flex-direction: column;
+        /* Stack the cards vertically */
+        align-items: center;
+        /* Align the cards centrally */
+    }
+
+    .about_section_2_heading_container {
+        background-size: 100%;
+        /* Adjust the background size for the heading */
+        font-size: 2em;
+        /* Reduce the font size for smaller screens */
+    }
+}
+
+/* Additional styles for the description container responsiveness */
+@media (max-width: 768px) {
+    .about_section_2_description_container {
+        flex-direction: column;
+        /* Stack the image and text vertically */
+        gap: 1em;
+        /* Adjust the gap as needed */
+        margin: 1em;
+        /* Add margin for spacing */
+    }
+
+    .text_container {
+        font-size: 1em;
+        /* Adjust the font size for readability on small screens */
+    }
+
+    .image_container {
+        justify-content: center;
+        /* Center the image within its container */
+    }
+}
