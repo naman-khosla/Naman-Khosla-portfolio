@@ -7,7 +7,7 @@ import Footer from "./Components/Main_Components/Footer";
 import Home from "./Pages/Homepage";
 import About from "./Pages/About";
 import Resume from "./Pages/Resume";
-import Hobbies from "./Pages/Hobbies";
+import Interests from "./Pages/Interests.js";
 import PortfolioPage from "./Pages/Pull.js";
 import ProjectDetail from "./Pages/ProjectDetails.js";
 
@@ -21,7 +21,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/resume" element={<Resume />} />
         <Route path="/portfolio" element={<PortfolioPage />} />
-        <Route path="/hobbies" element={<Hobbies />} />
+        <Route path="/Interests" element={<Interests />} />
         <Route path="/:projectName" element={<ProjectDetail />} />
       </Routes>
       <Footer />

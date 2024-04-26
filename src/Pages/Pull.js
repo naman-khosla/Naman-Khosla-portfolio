@@ -1,34 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./Portfolio.css";
-
-const RepoCard = ({ repo }) => {
-  return (
-    <div className="repo-card">
-      <img
-        src="path-to-your-placeholder-image.jpg"
-        alt={`${repo.name} logo`}
-        className="repo-logo"
-      />
-      <div className="repo-card-content">
-        <h2 className="repo-card-title">{repo.name}</h2>
-        <p className="repo-card-description">{repo.description}</p>
-      </div>
-      <div className="repo-card-actions">
-        <a
-          href={repo.html_url}
-          target="_blank"
-          rel="noopener noreferrer"
-          className="btn"
-        >
-          GitHub
-        </a>
-        <a href={`/${repo.name}`} className="btn btn-outline">
-          View Project
-        </a>
-      </div>
-    </div>
-  );
-};
+import RepoCard from "./Portfolio.js"; // Assuming RepoCard is a separate component file
 
 const PortfolioPage = () => {
   const [repos, setRepos] = useState([]);

@@ -3,88 +3,97 @@
     src: url("../../fonts/Grotesk.ttf");
 }
 
-
-.intro_shell{
-        background-image: url('background.svg');
-        background-size: cover;
-        background-position: center;
+.intro_shell {
+    background-image: url('background.svg');
+    background-size: cover;
+    background-position: center;
 }
 
-.intro_container{
-    margin-right: 2em;
-    margin-left: 2em;
+.intro_container {
     padding: 5rem;
     display: flex;
     gap: 2rem;
+    flex-wrap: wrap;
+    /* Allows wrapping on smaller screens */
+    align-items: center;
+    /* Aligns children vertically */
 }
 
-.intro_body{
-    padding: auto;
+
+.intro_body {
+    flex: 1;
+    /* Flex grow to take available space */
     text-align: left;
     font-weight: 600;
 }
 
-.naman{
+.naman {
     font-size: 6.5em;
+    margin-bottom: 10em;
+
+    /* Remove default margin */
 }
 
-.intro_text{
-    margin-top: 10rem;
+.intro_text {
     font-size: 1.4rem;
     color: white;
     font-family: Grotesk;
+    margin-top: 3rem;
 }
 
-.profile_pic_1{
+.profile_pic_1 {
     max-width: 40%;
-    margin-top: -70px;
-    left: 50px;
+    align-self: flex-start;
+    margin-top: -5em;
 }
 
-.body_icon1, .body_icon2, .body_icon3{
-    position: absolute;
+.body_icon1,
+.body_icon2,
+.body_icon3 {
     width: 20%;
+    position: static;
+    /* Change to static on small screens */
 }
 
-.body_icon1{
-    top:470px;
-    left: 100px;
-    animation: 3s linear 0s infinite alternate sun-rise;
-}
-
-.body_icon2{
-    top: 400px;
-    left: 600px;
-}
-
-.body_icon3{
-    right:30px;
-    top: 400px;
-}
-.body_icon1:hover, .body_icon3:hover{
-    height: auto;
-    width: 21%;
-}
-
-
-@keyframes sun-rise {
-    from {
-        transform: translateX(5vh);
+/* Specific adjustments for medium screens */
+@media (max-width: 1024px) {
+    .intro_container {
+        flex-direction: column;
+        /* Stack elements vertically */
+        padding: 2rem;
     }
 
-    to {
-        transform: translateX(0);
+    .profile_pic_1 {
+        max-width: 60%;
+        /* Increase size proportionally */
+        margin: auto;
+        /* Center align the image */
     }
-}
 
-@media (max-width: 1370px) {
-    .body_icon1, .body_icon2, .body_icon3 {
-            display: none;
-        }
-    
     .naman {
         font-size: 4rem;
-        padding: 0%;
+        /* Adjust font size */
     }
-    
-}    
+
+    .body_icon1,
+    .body_icon2,
+    .body_icon3 {
+        width: 30%;
+        /* Increase icon size for visibility */
+    }
+}
+
+/* Adjustments for very small screens */
+@media (max-width: 768px) {
+    .intro_text {
+        font-size: 1.2rem;
+        /* Smaller font size for readability */
+    }
+
+    .body_icon1,
+    .body_icon2,
+    .body_icon3 {
+        width: 50%;
+        /* Larger touch targets for mobile */
+    }
+}

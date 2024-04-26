@@ -1,0 +1,67 @@
+/* Add to your CSS file or a <style> tag in your component */
+
+/* Container for the feed that enables horizontal scrolling */
+.feed-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    /* Spacing between items */
+}
+
+/* Individual feed items */
+.feed-item {
+    flex: none;
+    /* Don’t grow or shrink */
+    width: 300px;
+    /* Width of each item; adjust as needed */
+    border: 1px solid #dbdbdb;
+    /* Instagram-like border */
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* Subtle shadow */
+    border-radius: 10px;
+    /* Rounded corners for the Instagram 'frame' look */
+    margin: 10px;
+    /* Margin around items */
+    overflow: hidden;
+    /* Ensures nothing spills out of the rounded corners */
+}
+
+/* Image styling */
+.feed-image {
+    width: 100%;
+    /* Makes the image take up full container width */
+    display: block;
+    /* Removes bottom margin/space below the image */
+    border: 4px solid #dbdbdb;
+    /* Instagram-like separator */
+}
+
+/* Caption and other text */
+.feed-caption,
+.feed-timestamp {
+    padding: 8px 12px;
+    /* Padding for text inside the item */
+    text-align: left;
+}
+
+/* Horizontal scrollbar styling */
+.feed-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.feed-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.feed-container::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.feed-container::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.loading_text{
+    font-size: 3rem;
+}

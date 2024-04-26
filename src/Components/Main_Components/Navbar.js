@@ -50,7 +50,7 @@ export default function Navbar() {
         <NavbarButton button_type="about" />
         <NavbarButton button_type="resume" />
         <NavbarButton button_type="portfolio" />
-        <NavbarButton button_type="hobbies" />
+        <NavbarButton button_type="Interests" />
       </div>
     </div>
   );

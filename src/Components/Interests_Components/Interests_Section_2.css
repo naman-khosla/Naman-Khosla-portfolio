@@ -1,0 +1,115 @@
+@font-face {
+    font-family: Grotesk;
+    src: url("../../fonts/Grotesk.ttf");
+}
+.feed-container {
+    display: flex;
+    overflow-x: auto;
+    gap: 20px;
+    margin-left: 2em;
+    perspective: 500px;
+    /* Adds perspective to create a 3D effect */
+    perspective-origin: 100px 50%;
+    /* Adjusts the origin of perspective */
+}
+
+.interest_section_shell h1{
+    font-family: Grotesk;
+    margin-left: 1em;
+    font-size: 3em;
+}
+
+.header_box{
+    display: flex;
+    padding: 1em;
+    gap: 0.8em;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.icon{
+    max-width: 10%;
+    border-radius: 100%;
+    border: 1px solid black;
+}
+
+.feed-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: none;
+    width: 300px;
+    border: 1px solid #dbdbdb;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1), 3px 5px 8px grey;
+    border-radius: 10px;
+    margin: 10px;
+    overflow: hidden;
+    transform: scale(0.9);
+    /* Scales down the items by default */
+    transition: transform 0.5s ease;
+    /* Smooth transition for scaling */
+}
+
+.feed-container:hover .feed-item {
+    transform: scale(1);
+    /* Scale items to normal size on hover */
+}
+
+.feed-container .feed-item:not(:hover) {
+    transform: scale(0.9);
+    /* Further scale down non-hovered items */
+    opacity: 0.8;
+    /* Reduce opacity for non-focused items */
+}
+
+.feed-image {
+    width: 100%;
+    display: block;
+    border: 2px solid white;
+}
+
+.feed-caption,
+.feed-timestamp {
+    padding: 1em;
+    text-align: justify;
+    font-size: 0.9em;
+}
+
+/* Styling for the scrollbar */
+.feed-container::-webkit-scrollbar {
+    height: 8px;
+}
+
+.feed-container::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.feed-container::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+.feed-container::-webkit-scrollbar-thumb:hover {
+    background: #1f1f1f;
+}
+
+.loading_text {
+    font-size: 3rem;
+}
+
+.link {
+    align-items: center;
+    margin-left: 1em;
+}
+
+.feed-text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+}
+
+.click_here {
+    max-width: 70%;
+    margin-left: 2em;
+}
