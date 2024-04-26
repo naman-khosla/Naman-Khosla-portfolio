@@ -1,0 +1,66 @@
+@font-face {
+    font-family: Grotesk;
+    src: url("../../fonts/Grotesk.ttf");
+}
+.resume_shell{
+    display: flex;
+    flex-direction: row;
+    font-family: Grotesk;
+    background-image: url('7.svg');
+    
+}
+
+.resume_left_container{
+    flex-basis: 65%;
+    padding: 2em;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    flex-wrap: wrap;
+}
+.resume_heading_image{
+    margin: 0px;
+    padding: 0;
+
+}
+.text_resume_image{
+    max-width: 42rem;
+    margin-left: 3em;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+.resume_text{
+    text-align: center;
+    font-size: 1.4rem;
+    
+}
+.resume_right_container{
+    flex-basis: 45%;
+    background-image: url('./10.svg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -10rem 1rem;
+}
+.profile_text{
+    margin-top: 4.5em;
+    margin-right: 2em;
+    text-align: center;
+    font-size: 1.5rem;
+    text-shadow: 0px 1px 2px whitesmoke;
+}
+
+@media (max-width: 768px) {
+    .resume_shell {
+        flex-direction: column;
+    }
+
+    .resume_left_container,
+    .resume_right_container {
+        flex-basis: auto;
+    }
+
+    .resume_heading_image,
+    .text_resume_image {
+        max-width: 100%;
+    }
+}

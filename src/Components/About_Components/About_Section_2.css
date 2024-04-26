@@ -1,6 +1,6 @@
 @font-face {
     font-family: Grotesk;
-    src: url("../fonts/Grotesk.ttf");
+    src: url("../../fonts/Grotesk.ttf");
 }
 
 .about_section_2_shell{
@@ -10,7 +10,7 @@
     padding: 1em;
     font-family: Grotesk;
     flex-wrap: wrap;
-    background-image: url('7.svg');
+    background-image: url('rings_background.svg');
     background-repeat: space;
 }
 
@@ -18,7 +18,7 @@
     display: flex;
     font-size: 3.5em;
     font-weight: 700;
-    background-image: url('9.svg');
+    background-image: url('orange_splash_icon_1.svg');
     background-size: 40%;
     background-position: 40% 50%;
     background-repeat: no-repeat;

@@ -1,7 +1,5 @@
-import Navbar from "../Components/Navbar.js";
-import Footer from "../Components/Footer.js";
-import Introduction1 from "../Components/Introduction_1.js";
-import ProfessionalSnap from "../Components/ProfessionalSnap.js";
+import Introduction1 from "../Components/Homepage_Components/Introduction_1.js";
+import ProfessionalSnap from "../Components/Homepage_Components/ProfessionalSnap.js";
 
 export default function Homepage() {
   return (

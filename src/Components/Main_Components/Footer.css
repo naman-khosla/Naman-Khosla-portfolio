@@ -1,15 +1,16 @@
 @font-face {
     font-family: Nickainley;
-    src: url("../fonts/Nickainley.ttf");
+    src: url("../../fonts/Nickainley.ttf");
 }
 
 @font-face {
     font-family: Trochhi;
-    src: url("../fonts/Trocchi.ttf");
+    src: url("../../fonts/Trocchi.ttf");
 }
 footer {
     margin-top: 0;
-    background: #EB5E28;
+    /* background-image: #EB5E28; */
+    background-image: url('banner.svg');
     padding: 2rem 0;
     text-align: center;
     font-size: 0.9rem;

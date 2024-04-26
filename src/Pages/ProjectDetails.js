@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import "../Components/Navbar.css";
 
 const ProjectDetail = () => {
   const { projectName } = useParams(); // This retrieves the projectName from the URL

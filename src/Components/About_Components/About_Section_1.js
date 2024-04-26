@@ -1,16 +1,13 @@
 import React from "react";
 import "./About_Section_1.css"; // Make sure to create an About.css file for styling
+import { ReactComponent as AboutImage } from "./about_text_image.svg";
 
 export default function About_Section_1() {
   return (
     <div className="about_shell">
       <div className="about_container_left">
         <div className="about_heading_image">
-          <img
-            src="./images/about_me/about_text_image.svg"
-            alt="About"
-            className="about-header-image"
-          />
+          <AboutImage alt="Aboutlogo" className="about-header-image" />
         </div>
         <div className="about_text">
           <p>
@@ -24,15 +21,7 @@ export default function About_Section_1() {
           </p>
         </div>
       </div>
-      <div className="about_container_right">
-        {/* <div className="about-image">
-          <img
-            src="./images/about_me/about_me_pic.svg"
-            alt="Naman Khosla"
-            className="about_picture"
-          />
-        </div> */}
-      </div>
+      <div className="about_container_right"></div>
     </div>
   );
 }

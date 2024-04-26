@@ -2,10 +2,10 @@ import React from "react";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom"; // Correct imports
 
 import "./App.css";
-import Navbar from "./Components/Navbar";
-import Footer from "./Components/Footer";
-import Introduction1 from "./Components/Introduction_1";
-import ProfessionalSnap from "./Components/ProfessionalSnap";
+import Navbar from "./Components/Main_Components/Navbar";
+import Footer from "./Components/Main_Components/Footer";
+import Introduction1 from "./Components/Homepage_Components/Introduction_1.js";
+import ProfessionalSnap from "./Components/Homepage_Components/ProfessionalSnap.js";
 import Home from "./Pages/Homepage";
 import About from "./Pages/About";
 import Resume from "./Pages/Resume";

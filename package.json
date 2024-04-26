@@ -6,6 +6,9 @@
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
+    "ag-grid-community": "^31.2.1",
+    "ag-grid-react": "^31.2.1",
+    "nth-check": "^2.1.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-icons": "^5.1.0",
@@ -38,12 +41,16 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "postcss": "^8.4.38",
+    "svgo": "^3.2.0"
   },
-
   "babel": {
-  "presets": ["react-app"],
-  "plugins": ["@babel/plugin-proposal-private-property-in-object"]
-}
-
+    "presets": [
+      "react-app"
+    ],
+    "plugins": [
+      "@babel/plugin-proposal-private-property-in-object"
+    ]
+  }
 }

@@ -1,6 +1,6 @@
 @font-face {
     font-family: Grotesk;
-    src: url("../fonts/Grotesk.ttf");
+    src: url("../../fonts/Grotesk.ttf");
 }
 
 .about_shell {
@@ -9,7 +9,7 @@
     justify-content: space-between;
     /* This may be causing elements to spread too far apart on medium screens */
     gap: 1em;
-    background-image: url('7.svg');
+    background-image: url('rings_background.svg');
 }
 
 .about_container_left {
