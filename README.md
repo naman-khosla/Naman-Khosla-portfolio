@@ -2,6 +2,8 @@
 
 Welcome to my personal portfolio website developed using React. This application showcases my skills, projects, and experiences, integrating dynamic content fetched from GitHub and Instagram APIs to highlight my professional and personal interests.
 
+<img width="1512" alt="image" src="https://github.com/naman-khosla/my-portfolio/assets/100039918/5c0a4d47-ef62-4b79-8e4f-b1f4310f3fff">
+
 ## Technologies Used
 
 - **React**: For building the user interface.
