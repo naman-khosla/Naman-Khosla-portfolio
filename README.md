@@ -1,4 +1,4 @@
-# Project Title
+# Naman Khosla Portfolio
 
 ## Purpose of the Application
 
