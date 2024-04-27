@@ -26,7 +26,7 @@ This portfolio is designed to be a professional and personal representation of m
 Clone the repository and install dependencies:
 
 - bash
-- git clone https://github.com/nama-khosla/my-portfolio.git
+- git clone https://github.com/naman-khosla/my-portfolio.git
 - cd my-portfolio
 - npm install
 
