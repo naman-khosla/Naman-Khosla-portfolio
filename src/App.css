@@ -10,8 +10,22 @@ html {
   scroll-behavior: smooth;
   scroll-padding-top: 75px;
 }
+::-webkit-scrollbar {
+  width: 8px;
+}
 
+::-webkit-scrollbar-track {
+  background: orangered;
+}
 
+::-webkit-scrollbar-thumb {
+  background: black;
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
 
 @media (min-width:1700px) {
   main .container {

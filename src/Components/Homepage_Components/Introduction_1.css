@@ -10,7 +10,7 @@
 }
 
 .intro_container {
-    margin:0 1em 1em 1em ;
+    margin:0 1em 0em 1em ;
     padding: 2.5rem;
     display: flex;
     flex-wrap: wrap;
@@ -37,7 +37,6 @@
     font-size: 1.4rem;
     color: white;
     font-family: Grotesk;
-    text-shadow: 0 0 4px #0D221B;
 }
 
 .profile_pic_1 {
@@ -46,20 +45,43 @@
     margin-left: 4em;
 }
 
-.body_icon1,
-.body_icon2,
-.body_icon3 {
+.body_icon1{
     width: 50%;
     position: relative;
     /* Change to static on small screens */
 }
 
+.body_icon2,
+.body_icon3{
+    position: absolute;
+}
+
+.body_icon2{
+    margin-top: -30rem;
+    margin-left: 40rem;
+    width: 20%;
+}
+.body_icon3 {
+    margin-top: -25rem;
+    margin-left: 75rem;
+    width: 20%;
+}
+
+.body_icon1:hover,.body_icon3:hover {
+    transform: translateY(-5px);
+}
 /* Specific adjustments for medium screens */
 @media (max-width: 1024px) {
+    .intro_shell{
+        background-image: none;
+    }
     .intro_container {
         flex-direction: column;
         /* Stack elements vertically */
         padding: 2rem;
+    }
+    .intro_text{
+        color: black;
     }
 
     .profile_pic_1 {
@@ -74,37 +96,15 @@
         /* Adjust font size */
     }
 
-    .body_icon1,
-    .body_icon2,
-    .body_icon3 {
-        width: 30%;
+    .body_icon1
+    {
+        width: 50%;
         /* Increase icon size for visibility */
     }
-}
-
-/* Adjustments for very small screens */
-@media (max-width: 768px) {
-    .intro_text {
-        font-size: 1.2rem;
-        /* Smaller font size for readability */
-    }
-
-    .body_icon1,
     .body_icon2,
-    .body_icon3 {
+    .body_icon3{
         display: none;
-        /* Larger touch targets for mobile */
-    }
-
-    .intro_shell {
-        margin-left: 0;
-        background-image: url('background.svg');
-        background-position: 0em -8em;
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
-   
-    .intro_text{
-        color: whitesmoke;
     }
 }
+
+/*  */

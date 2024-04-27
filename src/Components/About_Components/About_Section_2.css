@@ -100,6 +100,9 @@
     margin-bottom: auto;
     font-size: 1.3rem;
 }
+.education_card_1:hover,
+.education_card_2:hover,
+.education_card_3:hover {transform: translateY(-10px);}
 
 
 /* Responsive styles for the education cards */

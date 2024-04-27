@@ -4,14 +4,18 @@ import { Link } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdCloseCircle } from "react-icons/io";
 
-function NavbarButton({ button_type }) {
+function NavbarButton({ button_type, setMenuOpen }) {
   const [isHovered, setIsHovered] = useState(false);
   const defaultImage = `images/navbar_buttons/${button_type}_button.svg`;
   const hoverImage = `images/navbar_buttons/${button_type}_button_hover.svg`;
   const linkPath = button_type === "homepage" ? "/" : `/${button_type}`;
 
   return (
-    <Link to={linkPath} className={`navbar_button_${button_type}`}>
+    <Link
+      to={linkPath}
+      className={`navbar_button_${button_type}`}
+      onClick={() => setMenuOpen(false)}
+    >
       <img
         src={isHovered ? hoverImage : defaultImage}
         alt={button_type}
@@ -25,6 +29,7 @@ function NavbarButton({ button_type }) {
 
 export default function Navbar() {
   const [scrolled, setScrolled] = useState(false);
+  const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => {
@@ -37,11 +42,9 @@ export default function Navbar() {
 
   const navbarClass = scrolled ? "navbar_test" : "navbar_shell";
 
-  const [menuOpen, setMenuOpen] = useState(false);
-
   return (
     <div className={navbarClass}>
-      <Link to="/">
+      <Link to="/" onClick={() => setMenuOpen(false)}>
         <img
           className="main_logo"
           src="images/navbar_buttons/main_logo.png"
@@ -51,11 +54,11 @@ export default function Navbar() {
       <div
         className={menuOpen ? "navbar_buttons_open" : "navbar_buttons_close"}
       >
-        <NavbarButton button_type="homepage" />
-        <NavbarButton button_type="about" />
-        <NavbarButton button_type="resume" />
-        <NavbarButton button_type="portfolio" />
-        <NavbarButton button_type="Interests" />
+        <NavbarButton button_type="homepage" setMenuOpen={setMenuOpen} />
+        <NavbarButton button_type="about" setMenuOpen={setMenuOpen} />
+        <NavbarButton button_type="resume" setMenuOpen={setMenuOpen} />
+        <NavbarButton button_type="portfolio" setMenuOpen={setMenuOpen} />
+        <NavbarButton button_type="Interests" setMenuOpen={setMenuOpen} />
       </div>
       <button className="hambutton" onClick={() => setMenuOpen(!menuOpen)}>
         {menuOpen ? <IoMdCloseCircle /> : <GiHamburgerMenu />}

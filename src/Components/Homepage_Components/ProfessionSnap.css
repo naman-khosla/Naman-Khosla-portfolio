@@ -3,26 +3,26 @@
     src: url("../../fonts/Grotesk.ttf");
 }
 
-.professional_snap_shell{
+.professional_snap_shell {
     display: block;
     min-height: 600px;
-    margin: 0 0 0 0;
+    margin: 0;
     padding: 2.5em;
     background-color: #ff5500;
     font-family: Grotesk;
-
 }
 
-.professional_snap_shell h{
+.professional_snap_shell h {
     font-size: 4em;
     text-shadow: 0px 0px 8px white;
 }
+
 .professional_card_container {
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 5%;
-    margin: 5% 5% 5% 5%;
+    margin: 5%;
 }
 
 .card {
@@ -35,15 +35,16 @@
     background-color: #0D221B;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    min-height: 50%;
 }
 
 .card:hover {
     transform: translateY(-5px);
-    background-color: transparent ;
+    background-color: transparent;
     color: black;
 }
 
-.icons{
+.icons {
     width: 60px;
     height: auto;
     margin-bottom: 10px;
@@ -65,5 +66,60 @@
 .card:hover .card-description,
 .card:hover .icons {
     color: black;
-        text-shadow: 0px 0px 8px white;
+    text-shadow: 0px 0px 8px white;
+}
+
+/* Media Queries for different screen sizes */
+@media (max-width: 1200px) {
+    .professional_snap_shell h {
+        font-size: 3em;
+        /* Smaller font size for smaller desktops */
+    }
+
+    .card {
+        padding: 20px;
+        /* Slightly smaller padding */
+    }
+}
+
+@media (max-width: 768px) {
+    .professional_snap_shell {
+        padding: 1.5em;
+        /* Smaller padding for tablets */
+    }
+
+    .professional_snap_shell h {
+        font-size: 2.5em;
+        /* Even smaller font size */
+    }
+
+    .professional_card_container {
+        flex-direction: column;
+        /* Stack cards vertically */
+        gap: 2%;
+        /* Smaller gap */
+    }
+
+    .card {
+        width: 100%;
+        /* Full width cards */
+    }
+
+    .icons {
+        width: 50px;
+        /* Smaller icons */
+    }
+}
+
+@media (max-width: 480px) {
+    .professional_snap_shell h {
+        font-size: 2em;
+        /* Smaller font size for phones */
+    }
+
+    .card-title,
+    .card-description {
+        font-size: 16px;
+        /* Smaller text for better readability */
+    }
 }

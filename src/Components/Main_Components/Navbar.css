@@ -10,7 +10,7 @@
     justify-content: space-around;
     align-items: center;
     z-index: 9999;
-    transition: all 0.5s ease-in-out;
+            /* Optimized for specific properties */
 }
 
 .navbar_test {
@@ -41,8 +41,7 @@
     width: auto;
     justify-content: space-around;
     flex-wrap: wrap;
-    transition: all 0.5s ease-in-out;
-}
+    transition: all 0.5s ease-in-out; }
 
 .navbar_buttons_test {
     display: flex;
@@ -51,8 +50,7 @@
     width: auto;
     justify-content: space-around;
     flex-wrap: wrap;
-    transition: all 0.5s ease-in-out;
-}
+    transition: all 0.5s ease-in-out;}
 
 .hambutton{
     display: none;
@@ -67,14 +65,24 @@
     .navbar_buttons_open {
         display: flex;
         flex-direction: column;
+        transition: transform 0.5s ease-in-out;
+        transform: translateY(0);
     }
     .navbar_buttons_close{
         display:none;
+        transition: transform 0.5s ease-in-out;
+        transform: translateY(-100%);   
+    }
+
+    .navbar_test {
+        opacity: 0.95;
+        transition: transform 0.5s ease-in-out;
     }
 
     .hambutton {
         display: flex;
         font-size: 4rem;
+        transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
     }
 
     .main_logo {

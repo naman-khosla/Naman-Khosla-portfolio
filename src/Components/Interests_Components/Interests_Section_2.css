@@ -10,7 +10,7 @@
     perspective: 500px;
     /* Adds perspective to create a 3D effect */
     perspective-origin: 100px 50%;
-    /* Adjusts the origin of perspective */
+        background-image: url('rings_background.svg');
 }
 
 .interest_section_shell h1{

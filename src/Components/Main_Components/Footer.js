@@ -24,11 +24,11 @@ const Footer = () => {
           <Link to="/portfolio">Portfolio</Link>
         </li>
         <li>
-          <Link to="/interest">interests</Link>
+          <Link to="/interests">Interests</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to="/contact">Contact</Link>
-        </li>
+        </li> */}
       </ul>
       <div className="footer__socials">
         <a
