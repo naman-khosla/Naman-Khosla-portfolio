@@ -1,8 +1,64 @@
-# Naman Khosla Portfolio
+# Naman Khosla's Portfolio
+
+Welcome to my personal portfolio website developed using React. This application showcases my skills, projects, and experiences, integrating dynamic content fetched from GitHub and Instagram APIs to highlight my professional and personal interests.
+
+## Technologies Used
+
+- **React**: For building the user interface.
+- **React Router**: For single page application navigation.
+- **CSS**: For styling components.
+- **GitHub API**: To fetch and display projects.
+- **Instagram API**: To display latest posts and promote mental health awareness.
 
 ## Purpose of the Application
 
-This application is a personal portfolio website developed using React. Its primary purpose is to showcase my skills, projects, and experiences in a visually appealing and user-friendly manner. The site integrates with various APIs such as GitHub and Instagram to dynamically display content and highlight my professional and personal interests.
+This portfolio is designed to be a professional and personal representation of my work and interests. It serves not only as a showcase for my technical abilities but also as a platform to express my passion for software development and advocacy for mental health.
+
+## Features
+
+- **Dynamic GitHub Repository Integration**: Automatically fetches and displays repositories from GitHub to highlight recent projects.
+- **Instagram Feed**: Dynamically displays recent Instagram posts to engage visitors with current activities and advocacies.
+- **Responsive Design**: Ensures the portfolio is accessible on a variety of devices and screen sizes.
+- **Interactive UI Components**: Enhances user experience with interactive elements such as modals and dropdowns.
+
+## Installation
+
+Clone the repository and install dependencies:
+
+- bash
+- git clone https://github.com/your-github-username/your-repository-name.git
+- cd your-repository-name
+- npm install
+
+## Application Architecture
+
+### Components
+
+Reusable UI components are stored in the Components directory.
+
+Pages
+- **Home.js**: The landing page.
+- **About.js**: Provides a biography and personal statement.
+- **Resume.js**: Outlines professional and academic history.
+- **Portfolio.js**: Showcases detailed project work.
+- **Interests.js**: Shares personal interests and social advocacy.
+
+## Assets
+
+Contains images and SVG files used across the application.
+
+## Styles
+
+Contains CSS files ensuring a consistent and responsive design.
+
+## Component Hierarchy
+- App.js: Integrates routing and global layout.
+- Navbar.js: Manages navigation across the portfolio.
+- Footer.js: Contains links to social media and additional resources.
+- Individual page components for each section of the portfolio.
+
+## How to Contribute
+Contributions are welcome! Please follow these steps:
 
 ## How to Contribute
 
@@ -19,57 +75,11 @@ Contributions to this project are welcome! Here's how you can contribute:
 9. **Submit a Pull Request**: Open a pull request from your branch to the main repository. Provide a detailed description of the changes and any other relevant information.
 10. **Review and Merge**: The repository maintainers will review your pull request. If your changes are approved, they will be merged into the main branch.
 
-## List of Features
-
-- **Dynamic Content Integration**: Integration with GitHub and Instagram APIs to fetch and display data.
-- **Responsive Design**: Fully responsive web design that adjusts to different screen sizes and devices.
-- **Interactive UI Components**: Interactive elements such as modals, dropdowns, and carousels.
-- **SPA Functionality**: Single Page Application functionality using React Router for seamless user experience.
-- **Accessibility Features**: Accessibility enhancements for screen readers and keyboard navigation.
-
-## List of Dependencies and Installation
-
-### Dependencies:
-
-- `react`: Core React library for building the UI.
-- `react-dom`: React package for DOM-related rendering paths.
-- `react-router-dom`: React Router library for managing navigation.
-- `react-icons`: Library to include popular icons in the React projects.
-
-### Installation:
-
-To install the application and its dependencies, run the following command in the root directory of the project:
-bash
-npm install
-
-## Application Architecture
-
-The application is structured as follows:
-
-### Components
-Contains all the reusable components of the application.
-
-### Pages
-Contains different pages of the application such as:
-- `Home.js`: The landing page of the site.
-- `About.js`: Page that describes who you are.
-- `Resume.js`: Displays your professional and educational background.
-- `Portfolio.js`: Showcases your projects and works.
-- `Interests.js`: Details your personal interests and extracurricular activities.
-
-### Assets
-Contains static assets like images and SVG files used throughout the application.
-
-### Styles
-Contains CSS files for styling the application, ensuring a consistent look and feel across all pages.
-
-### Component Hierarchy
-
-- `App.js`: Root component that includes routing logic.
-- `Navbar.js`: Navigation bar component for routing across different pages.
-- `Footer.js`: Footer component displayed across all pages.
-- `Home.js`, `About.js`, `Resume.js`, `Portfolio.js`, `Interests.js`: Components representing individual pages.
-
 ## Reporting Issues
+To report issues or suggest improvements, please use the GitHub Issues page. Include as much information as possible, such as steps to reproduce the issue, the expected outcome, and actual outcome.
 
-To report issues or bugs, please open an issue in the GitHub repository of the project. Provide a detailed description of the issue, including steps to reproduce, screenshots (if applicable), and any other information that might be helpful for resolving the issue.
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
+
+## Contact
+For major queries or collaborations, feel free to contact me at namankhosla98@gmail.com
