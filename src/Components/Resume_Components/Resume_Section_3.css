@@ -1,3 +1,40 @@
-.ag-theme-alpine{
+.honeycomb-layout {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.hexagon-container {
+    position: relative;
+    width: 100px;
+    /* Hexagon width */
+    height: 115px;
+    /* Hexagon height */
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hexagon {
+    background-color: #f0f0f0;
+    /* Hexagon color */
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
     text-align: center;
+}
+
+.icon {
+    border: 0;
+    border-radius: 0;
+}
+
+.hexagon p {
+    margin-top: 1rem;
+    /* Adjust space for the skill name */
 }
