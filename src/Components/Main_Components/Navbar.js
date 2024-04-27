@@ -1,6 +1,8 @@
 import "./Navbar.css";
 import { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { IoMdCloseCircle } from "react-icons/io";
 
 function NavbarButton({ button_type }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -34,24 +36,30 @@ export default function Navbar() {
   }, []);
 
   const navbarClass = scrolled ? "navbar_test" : "navbar_shell";
-  const logoClass = scrolled ? "main_logo_test" : "main_logo";
+
+  const [menuOpen, setMenuOpen] = useState(false);
 
   return (
     <div className={navbarClass}>
       <Link to="/">
         <img
-          className={logoClass}
+          className="main_logo"
           src="images/navbar_buttons/main_logo.png"
           alt="main logo"
         />
       </Link>
-      <div className="navbar_buttons">
+      <div
+        className={menuOpen ? "navbar_buttons_open" : "navbar_buttons_close"}
+      >
         <NavbarButton button_type="homepage" />
         <NavbarButton button_type="about" />
         <NavbarButton button_type="resume" />
         <NavbarButton button_type="portfolio" />
         <NavbarButton button_type="Interests" />
       </div>
+      <button className="hambutton" onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? <IoMdCloseCircle /> : <GiHamburgerMenu />}
+      </button>
     </div>
   );
 }
