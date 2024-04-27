@@ -2,34 +2,32 @@ import React from "react";
 import { BsLinkedin } from "react-icons/bs";
 import { FaGithub } from "react-icons/fa";
 import "./Footer.css";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
     <footer>
-      <a href="#home" className="footer__logo">
+      <Link to="/homepage" className="footer__logo">
         Naman Khosla
-      </a>
+      </Link>
       <ul className="permalinks">
         <li>
-          <a href="/homepage">Home</a>
+          <Link to="/homepage">Home</Link>
         </li>
         <li>
-          <a href="#about">About</a>
+          <Link to="/about">About</Link>
         </li>
         <li>
-          <a href="#experience">Resume</a>
+          <Link to="/resume">Resume</Link>
         </li>
         <li>
-          <a href="#portfolio">Portfolio</a>
+          <Link to="/portfolio">Portfolio</Link>
         </li>
         <li>
-          <a href="#testimonials">Skills</a>
+          <Link to="/interest">interests</Link>
         </li>
         <li>
-          <a href="#contact">Hobbies</a>
-        </li>
-        <li>
-          <a href="#contact">Contact</a>
+          <Link to="/contact">Contact</Link>
         </li>
       </ul>
       <div className="footer__socials">

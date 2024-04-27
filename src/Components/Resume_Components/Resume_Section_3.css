@@ -1,40 +1,85 @@
-.honeycomb-layout {
+@font-face {
+    font-family: Grotesk;
+    src: url("../../fonts/Grotesk.ttf");
+}
+#skill_layout{
+    display: flex;
+    flex-direction: column;
+    padding: 1em;
+    font-family: Grotesk;
+    background-image: url('double_rings_background.svg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.honeycomb_layout{
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    padding: 2.5em;
+    margin-top: 12em;
+    justify-content: space-around;
+    gap:2em
 }
 
-.hexagon-container {
-    position: relative;
-    width: 100px;
-    /* Hexagon width */
-    height: 115px;
-    /* Hexagon height */
-    margin: 1rem;
+.hexagon_skill{
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.hexagon {
-    background-color: #f0f0f0;
-    /* Hexagon color */
-    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    padding: 3em;
     flex-direction: column;
-    text-align: center;
+    align-items: center;
+    gap: 1em;
+    width: 12em;
+    text-align: center ;
+    clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+    background-color: rgba(255, 85, 0, 0.2);
 }
 
-.icon {
-    border: 0;
-    border-radius: 0;
+.skill_container{
+    padding: 1em;
 }
 
-.hexagon p {
-    margin-top: 1rem;
-    /* Adjust space for the skill name */
+.skill_icon{
+    font-size: 4em;
+}
+.programs{
+    position: absolute;
+    max-width: 60%;
+}
+.hexagon_skill:hover{
+    background-color:#ff5500;
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+/* Responsive design for screen width of 1370px or less */
+@media (max-width: 1370px) {
+    .honeycomb_layout {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+        gap: 2em;
+        padding: 2em 0;
+        justify-content: flex-start;
+        margin-top: 0em;
+    }
+
+        .programs {
+            position: relative;
+        }
+/* Webkit Scrollbar styles */
+    .honeycomb_layout::-webkit-scrollbar {
+        height: 8px;
+        /* Height of horizontal scrollbar */
+        background: #f0f0f0;
+        /* Background color of scrollbar */
+    }
+
+    .honeycomb_layout::-webkit-scrollbar-thumb {
+        background: #ff5500;
+        /* Color of the scroll thumb */
+        border-radius: 4px;
+        /* Rounded corners of scroll thumb */
+    }
+
+    .honeycomb_layout::-webkit-scrollbar-thumb:hover {
+        background: #ff5500;
+        /* Color of the scroll thumb on hover */
+}
 }

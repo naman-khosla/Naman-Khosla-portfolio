@@ -11,11 +11,12 @@ footer {
     margin-top: 0;
     /* background-image: #EB5E28; */
     background-image: url('banner.svg');
-    padding: 2rem 0;
+    padding: 1rem;
     text-align: center;
     font-size: 0.9rem;
     margin-top: 0;
     font-family: Trocchi;
+    border-top: 3px solid #0D221B;
 }
 
 footer a {

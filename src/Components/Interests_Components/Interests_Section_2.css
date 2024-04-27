@@ -86,11 +86,12 @@
 }
 
 .feed-container::-webkit-scrollbar-thumb {
-    background: #888;
+    background: #ff5500;
+            border-radius: 5px;
 }
 
 .feed-container::-webkit-scrollbar-thumb:hover {
-    background: #1f1f1f;
+    background: #ff5500;
 }
 
 .loading_text {
