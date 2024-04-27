@@ -43,7 +43,7 @@ To install the application and its dependencies, run the following command in th
 ```bash
 npm install
 
-### Application Architecture
+Application Architecture
 The application is structured as follows:
 
 Components: Contains all the reusable components of the application.
