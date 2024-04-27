@@ -1,6 +1,7 @@
 import Resume_Section_1 from "../Components/Resume_Components/Resume_Section_1.js";
 import Resume_Section_2 from "../Components/Resume_Components/Resume_Section_2.js";
 import Resume_Section_3 from "../Components/Resume_Components/Resume_Section_3.js";
+import Resume_Section_4 from "../Components/Resume_Components/Resume_Section_4.js";
 
 export default function Resume() {
   return (
@@ -8,6 +9,7 @@ export default function Resume() {
       <Resume_Section_1 />
       <Resume_Section_2 />
       <Resume_Section_3 />
+      <Resume_Section_4 />
     </div>
   );
 }

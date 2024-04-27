@@ -1,0 +1,66 @@
+@font-face {
+    font-family: Grotesk;
+    src: url("../../fonts/Grotesk.ttf");
+}
+.resume-section {
+    text-align: center;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: Grotesk;
+    background-image: url('double_rings_background.svg');
+    background-repeat: no-repeat;
+    /* Ensures all content is aligned in the center */
+}
+
+.resume_container {
+    cursor: pointer;
+    /* Indicates the element is interactive */
+    width: fit-content;
+    /* Shrinks to the size of the content inside */
+    margin: auto;
+    /* Centers horizontally in the flex container */
+    padding: 2em;
+    display: flex;
+    justify-content: center;
+    /* Center content horizontally */
+    align-items: center;
+    /* Center content vertically */
+}
+
+.resume_page {
+    width: 100%;
+    /* Full width of the container */
+    max-width: 600px;
+    /* Adjust max-width to suit the size of your images */
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.6s ease-in-out;
+    transform-style: preserve-3d;
+    backface-visibility: hidden;
+    /* Ensures the back of the "flipped" page isn't visible */
+}
+
+/* When the resume page is clicked, add a rotating effect */
+.resume_container:active .resume_page {
+    transform: rotateY(180deg);
+    /* Flips the image to simulate turning the page */
+}
+
+.download-button {
+    padding: 10px 20px;
+    background-color: #ff5500;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s;
+    margin-top: 20px;
+}
+
+.download-button:hover {
+    background-color: #c84706;
+}

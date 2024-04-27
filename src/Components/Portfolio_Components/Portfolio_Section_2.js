@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
 import "./Portfolio_Section_2.css";
 
-const RepoCard = ({ repo, languages }) => (
+// RepoCard component to display individual repositories
+const RepoCard = ({ repo }) => (
   <div className="repo-card">
     <div className="repo-card-content">
       <h2 className="repo-card-title">{repo.name}</h2>
       <p className="repo-card-description">{repo.description}</p>
-      <p className="repo-languages">Languages: {languages}</p>
+      <p className="repo-languages">Languages: {repo.languages}</p>
     </div>
     <div className="repo-card-actions">
       <a
@@ -21,8 +22,10 @@ const RepoCard = ({ repo, languages }) => (
   </div>
 );
 
+// Portfolio_Section_2 component that fetches repositories and includes a search feature
 const Portfolio_Section_2 = () => {
   const [repos, setRepos] = useState([]);
+  const [searchTerm, setSearchTerm] = useState("");
 
   useEffect(() => {
     const fetchRepos = async () => {
@@ -42,9 +45,14 @@ const Portfolio_Section_2 = () => {
           return repo;
         });
 
-        Promise.all(repoPromises).then((completeRepos) => {
-          setRepos(completeRepos);
-        });
+        Promise.all(repoPromises)
+          .then((completeRepos) => {
+            console.log(completeRepos);
+            setRepos(completeRepos);
+          })
+          .catch((error) => {
+            console.error("Error with Promise.all: ", error);
+          });
       } catch (error) {
         console.error("Fetching error: ", error);
       }
@@ -53,12 +61,29 @@ const Portfolio_Section_2 = () => {
     fetchRepos();
   }, []);
 
+  // Function to handle the search filter
+  const filteredRepos = searchTerm
+    ? repos.filter((repo) =>
+        repo.name.toLowerCase().includes(searchTerm.toLowerCase())
+      )
+    : repos;
+
   return (
     <div className="portfolio-container">
       <h1>My GitHub Repositories</h1>
+      <h2>More projects coming soon...</h2>
+      <div className="search-box">
+        <input
+          type="text"
+          placeholder="Search repositories..."
+          value={searchTerm}
+          onChange={(e) => setSearchTerm(e.target.value)}
+          className="search-input"
+        />
+      </div>
       <div className="repo-container">
-        {repos.map((repo) => (
-          <RepoCard key={repo.id} repo={repo} languages={repo.languages} />
+        {filteredRepos.map((repo) => (
+          <RepoCard key={repo.id} repo={repo} />
         ))}
       </div>
     </div>
