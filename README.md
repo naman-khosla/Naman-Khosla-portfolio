@@ -39,21 +39,37 @@ Contributions to this project are welcome! Here's how you can contribute:
 ### Installation:
 
 To install the application and its dependencies, run the following command in the root directory of the project:
-
-```bash
+bash
 npm install
 
-Application Architecture
+## Application Architecture
+
 The application is structured as follows:
 
-Components: Contains all the reusable components of the application.
-Pages: Contains different pages of the application such as Home, About, Resume, and Portfolio.
-Assets: Contains static assets like images and SVG files.
-Styles: Contains CSS files for styling the application.
-Component Hierarchy:
-App.js: Root component that includes routing logic.
-Navbar.js: Navigation bar component for routing across different pages.
-Footer.js: Footer component displayed across all pages.
-Home.js, About.js, Resume.js, Portfolio.js, Interests.js: Components representing individual pages.
-Reporting Issues
+### Components
+Contains all the reusable components of the application.
+
+### Pages
+Contains different pages of the application such as:
+- `Home.js`: The landing page of the site.
+- `About.js`: Page that describes who you are.
+- `Resume.js`: Displays your professional and educational background.
+- `Portfolio.js`: Showcases your projects and works.
+- `Interests.js`: Details your personal interests and extracurricular activities.
+
+### Assets
+Contains static assets like images and SVG files used throughout the application.
+
+### Styles
+Contains CSS files for styling the application, ensuring a consistent look and feel across all pages.
+
+### Component Hierarchy
+
+- `App.js`: Root component that includes routing logic.
+- `Navbar.js`: Navigation bar component for routing across different pages.
+- `Footer.js`: Footer component displayed across all pages.
+- `Home.js`, `About.js`, `Resume.js`, `Portfolio.js`, `Interests.js`: Components representing individual pages.
+
+## Reporting Issues
+
 To report issues or bugs, please open an issue in the GitHub repository of the project. Provide a detailed description of the issue, including steps to reproduce, screenshots (if applicable), and any other information that might be helpful for resolving the issue.
