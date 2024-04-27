@@ -13,6 +13,8 @@ https://naman-khosla-portfolio.netlify.app
 - **CSS**: For styling components.
 - **GitHub API**: To fetch and display projects.
 - **Instagram API**: To display latest posts and promote mental health awareness.
+- **Environment Variables**: Used to securely store API keys.
+
 
 ## Purpose of the Application
 
@@ -22,9 +24,11 @@ This portfolio is designed to be a professional and personal representation of m
 
 - **Dynamic GitHub Repository Integration**: Automatically fetches and displays repositories from GitHub to highlight recent projects.
 - **Instagram Feed**: Dynamically displays recent Instagram posts to engage visitors with current activities and advocacies.
-- **Responsive Design**: Ensures the portfolio is accessible on a variety of devices and screen sizes.
-- **Interactive UI Components**: Enhances user experience with interactive elements such as modals and dropdowns.
-
+- **Responsive Design**: The website adjusts to fit different devices and screen sizes, ensuring accessibility and usability.
+- **Interactive UI Components**: Enhances user experience with interactive elements such as dropdowns and modal windows.
+- **Single Page Application (SPA)**: Implements SPA architecture for smooth user experiences without page reloads.
+- **Use of Environmental Variables**: Demonstrates best practices in security by storing API keys in environment variables, preventing them from being exposed in the codebase.
+  
 ## Installation
 
 Clone the repository and install dependencies:
@@ -33,6 +37,13 @@ Clone the repository and install dependencies:
 - git clone https://github.com/naman-khosla/my-portfolio.git
 - cd my-portfolio
 - npm install
+
+The application will be available at http://localhost:3000.
+
+Ensure you have a .env file in your root directory with the necessary API keys:
+
+REACT_APP_GITHUB_KEY=your_github_api_key
+REACT_APP_INSTAGRAM_KEY=your_instagram_api_key
 
 ## Application Architecture
 
