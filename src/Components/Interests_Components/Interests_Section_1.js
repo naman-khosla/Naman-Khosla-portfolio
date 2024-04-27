@@ -18,18 +18,18 @@ export default function Interests_section_1() {
             Hello! This section of my website is dedicated to my personal
             interests and passion projects. One of my core pursuits outside of
             professional work is advocating for mental health awareness and
-            support. As the content creator for the Instagram account{" "}
-            <Link to={flow}>@flow_mentalhealth</Link>, I strive to inspire and
-            educate on the importance of mental well-being. This platform allows
-            me to merge my creativity with my commitment to making a positive
-            impact on others' lives. Through engaging, informative content, I
-            aim to foster a community where open discussions about mental health
-            are not only encouraged but normalized. Here, you'll find a live
-            flow of content from <Link to={flow}>@flow_mentalhealth</Link>,
-            showcasing various initiatives, tips, and stories aimed at enhancing
-            mental health awareness. Join me in spreading positivity and
-            empowering insights as we navigate the complexities of mental
-            well-being together.
+            support. As the content creator for Counsellor Ananya Maheshwari's
+            Instagram account <Link to={flow}>@flow_mentalhealth</Link>, I
+            strive to inspire and educate on the importance of mental
+            well-being. This platform allows me to merge my creativity with my
+            commitment to making a positive impact on others' lives. Through
+            engaging, informative content, I aim to foster a community where
+            open discussions about mental health are not only encouraged but
+            normalized. Here, you'll find a live flow of content from{" "}
+            <Link to={flow}>@flow_mentalhealth</Link>, showcasing various
+            initiatives, tips, and stories aimed at enhancing mental health
+            awareness. Join me in spreading positivity and empowering insights
+            as we navigate the complexities of mental well-being together.
           </p>
         </div>
       </div>

@@ -7,12 +7,13 @@
     flex-direction: row;
     font-family: Grotesk;
     background-image: url('7.svg');
+    margin-bottom: 2em;
     
 }
 
 .resume_left_container{
     flex-basis: 65%;
-    padding: 2em;
+    padding: 3.4em;
     justify-content: space-between;
     align-items: center;
     text-align: center;
@@ -36,10 +37,11 @@
 }
 .resume_right_container{
     flex-basis: 45%;
+    padding: 2em;
     background-image: url('./10.svg');
-    background-size: cover;
+    background-size: 60rem;
     background-repeat: no-repeat;
-    background-position: -10rem 1rem;
+    background-position: -10rem 4rem;
 }
 .profile_text{
     margin-top: 4.5em;
@@ -57,6 +59,10 @@
     .resume_left_container,
     .resume_right_container {
         flex-basis: auto;
+        
+    }
+    .resume_right_container{
+        display:none
     }
 
     .resume_heading_image,

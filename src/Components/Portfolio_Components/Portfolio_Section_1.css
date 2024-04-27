@@ -1,0 +1,90 @@
+@font-face {
+    font-family: Grotesk;
+    src: url("../../fonts/Grotesk.ttf");
+}
+
+.Portfolio_Section_1_shell {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+    /* Default direction */
+    font-family: Grotesk;
+}
+
+.Portfolio_Section_1_container_left {
+    flex-basis: 50%;
+    /* flex: 1; */
+    /* Allows the container to grow and shrink as needed */
+    justify-content: space-between;
+    position: relative;
+    padding: 1em;
+    text-align: center;
+}
+
+.Portfolio_Section_1_image {
+    margin-top: -5em;
+    /* Adjust or remove this for smaller screens if it causes overlap */
+}
+
+.text_image{
+    max-width: 110%;
+}
+
+
+.portfolio_section_1 h2 {
+    margin-top: -4em;
+    /* Adjust or remove this for smaller screens if it causes overlap */
+}
+
+.portfolio_section_1_image p {
+    font-size: 1.2em;
+    /* Consider making font size responsive */
+}
+
+.Portfolio_Section_1_container_right {
+    /* flex: 1; */
+    flex-basis: 50%;
+    /* Allows the container to grow and shrink as needed */
+    background-image: url('portfolio_section_background.svg');
+    background-repeat: no-repeat;
+    background-size: 55rem;
+    /* Changes from 80rem to cover to ensure full coverage */
+    background-position: center;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .portfolio_section_1_shell {
+        flex-direction: column;
+        /* Stack the containers vertically on smaller screens */
+    }
+
+    .portfolio_section_1_container_left,
+    .portfolio_section_1_container_right {
+        flex-basis: 100%;
+        /* Each container takes full width of the screen */
+        padding: 0.5em;
+        /* Adjust padding for smaller screens */
+    }
+
+    .portfolio_section_1_image {
+        margin-top: 1em;
+        /* Less negative margin for better spacing */
+    }
+
+    .portfolio_section_1_image h2,
+    .portfolio_section_1_image p {
+        margin-top: 0.5em;
+        /* Adjust spacing around the text */
+    }
+
+    .portfolio_section_1_image p {
+        font-size: 1em;
+        /* Smaller font size for better readability on smaller screens */
+    }
+
+    .portfolio_section_1_container_right {
+        background-image: none;
+        /* Changes to contain to see the whole image without cutting off */
+    }
+}

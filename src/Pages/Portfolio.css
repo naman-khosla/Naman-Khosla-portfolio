@@ -54,7 +54,7 @@
 
 .btn {
     padding: 0.5em 1em;
-    background-color: #007bff;
+    background-color: #ff5500;
     color: white;
     text-decoration: none;
     border: none;
@@ -63,5 +63,6 @@
 }
 
 .btn:hover {
-    background-color: #0056b3;
+    background-color: black;
+    color: #ff5500;
 }
