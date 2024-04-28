@@ -26,9 +26,6 @@ const Footer = () => {
         <li>
           <Link to="/interests">Interests</Link>
         </li>
-        {/* <li>
-          <Link to="/contact">Contact</Link>
-        </li> */}
       </ul>
       <div className="footer__socials">
         <a
@@ -47,9 +44,7 @@ const Footer = () => {
         </a>
       </div>
       <div className="footer__copyright">
-        <small>
-          &copy; N1150721 Naman Khosla 2024. All rights reserved. QUT IFN666
-        </small>
+        <small>&copy; 2024 Naman Khosla 2024</small>
       </div>
     </footer>
   );
