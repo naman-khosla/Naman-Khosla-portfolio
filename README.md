@@ -1,70 +1,100 @@
-# Getting Started with Create React App
+# Naman Khosla's Portfolio
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to my personal portfolio website developed using React. This application showcases my skills, projects, and experiences, integrating dynamic content fetched from GitHub and Instagram APIs to highlight my professional and personal interests.
 
-## Available Scripts
+https://naman-khosla-portfolio.netlify.app
 
-In the project directory, you can run:
+<img width="1512" alt="image" src="https://github.com/naman-khosla/my-portfolio/assets/100039918/5c0a4d47-ef62-4b79-8e4f-b1f4310f3fff">
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **React**: For building the user interface.
+- **React Router**: For single page application navigation.
+- **CSS**: For styling components.
+- **GitHub API**: To fetch and display projects.
+- **Instagram API**: To display latest posts and promote mental health awareness.
+- **Environment Variables**: Used to securely store API keys.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+## Purpose of the Application
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+This portfolio is designed to be a professional and personal representation of my work and interests. It serves not only as a showcase for my technical abilities but also as a platform to express my passion for software development and advocacy for mental health.
 
-### `npm run build`
+## Features
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Dynamic GitHub Repository Integration**: Automatically fetches and displays repositories from GitHub to highlight recent projects.
+- **Instagram Feed**: Dynamically displays recent Instagram posts to engage visitors with current activities and advocacies.
+- **Responsive Design**: The website adjusts to fit different devices and screen sizes, ensuring accessibility and usability.
+- **Interactive UI Components**: Enhances user experience with interactive elements such as dropdowns and modal windows.
+- **Single Page Application (SPA)**: Implements SPA architecture for smooth user experiences without page reloads.
+- **Use of Environmental Variables**: Demonstrates best practices in security by storing API keys in environment variables, preventing them from being exposed in the codebase.
+  
+## Installation
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Clone the repository and install dependencies:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- bash
+- git clone https://github.com/naman-khosla/my-portfolio.git
+- cd my-portfolio
+- npm install
 
-### `npm run eject`
+The application will be available at http://localhost:3000.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Ensure you have a .env file in your root directory with the necessary API keys:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+REACT_APP_GITHUB_KEY=your_github_api_key
+REACT_APP_INSTAGRAM_KEY=your_instagram_api_key
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+## Application Architecture
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Components
 
-## Learn More
+Reusable UI components are stored in the Components directory.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Pages
+- **Home.js**: The landing page.
+- **About.js**: Provides a biography and personal statement.
+- **Resume.js**: Outlines professional and academic history.
+- **Portfolio.js**: Showcases detailed project work.
+- **Interests.js**: Shares personal interests and social advocacy.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Assets
 
-### Code Splitting
+Contains images and SVG files used across the application.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Styles
 
-### Analyzing the Bundle Size
+Contains CSS files ensuring a consistent and responsive design.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+## Component Hierarchy
+- App.js: Integrates routing and global layout.
+- Navbar.js: Manages navigation across the portfolio.
+- Footer.js: Contains links to social media and additional resources.
+- Individual page components for each section of the portfolio.
 
-### Making a Progressive Web App
+## How to Contribute
+Contributions are welcome! Please follow these steps:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## How to Contribute
 
-### Advanced Configuration
+Contributions to this project are welcome! Here's how you can contribute:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. **Fork the Repository**: Start by forking the repository to your GitHub account.
+2. **Clone the Forked Repository**: Clone the repository to your local machine to make changes.
+3. **Create a New Branch**: Create a new branch for your changes. Use a descriptive name for your branch that reflects the changes you intend to make.
+4. **Make Your Changes**: Implement your changes or improvements in your branch. Be sure to follow the existing coding style and include comments where necessary.
+5. **Run the Application Locally**: Ensure the application builds and runs correctly on your local machine. Check for any bugs or issues introduced by your changes.
+6. **Write Tests**: If applicable, write any necessary tests to cover the new functionality.
+7. **Commit Changes**: Commit your changes with a clear and concise commit message describing the enhancements or fixes.
+8. **Push Changes**: Push your changes to your forked repository on GitHub.
+9. **Submit a Pull Request**: Open a pull request from your branch to the main repository. Provide a detailed description of the changes and any other relevant information.
+10. **Review and Merge**: The repository maintainers will review your pull request. If your changes are approved, they will be merged into the main branch.
 
-### Deployment
+## Reporting Issues
+To report issues or suggest improvements, please use the GitHub Issues page. Include as much information as possible, such as steps to reproduce the issue, the expected outcome, and actual outcome.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+## License
+This project is licensed under the MIT License - see the LICENSE.md file for details.
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Contact
+For major queries or collaborations, feel free to contact me at namankhosla98@gmail.com
